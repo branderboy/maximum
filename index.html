@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+
 <html lang="en" class="scroll-smooth bg-white">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maximum Electrical Consulting | 1 Volt to a Lightning Bolt</title>
+    <title>Maximum Electrical Consulting | Trusted Local Maryland Electricians</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,6 +49,22 @@
             border: 1px solid rgba(255, 255, 255, 0.05);
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             border-left: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Scrolled Navbar Dynamics */
+        .scrolled-nav #navbar-inner {
+            background: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: 0 10px 40px -10px rgba(15, 27, 45, 0.15) !important;
+            border-color: rgba(15, 27, 45, 0.05) !important;
+        }
+        .scrolled-nav .nav-text-main {
+            color: #0F1B2D !important;
+        }
+        .scrolled-nav .nav-link-item {
+            color: #0F1B2D !important;
+        }
+        .scrolled-nav .nav-link-item:hover {
+            color: #E8581A !important;
         }
 
         /* Micro-Interactions & Animations */
@@ -98,38 +114,38 @@
 <body class="bg-white text-navy font-sans antialiased overflow-x-hidden selection:bg-orange selection:text-white">
 
     <!-- FLOATING GLASS NAVBAR -->
-    <nav class="fixed w-full z-50 top-6 px-4">
-        <div class="max-w-7xl mx-auto glass-panel rounded-2xl px-6 py-4 flex justify-between items-center shadow-glass transition-all duration-300 hover:bg-navy/60">
+    <nav id="navbar" class="fixed w-full z-50 top-6 px-4 transition-all duration-300">
+        <div id="navbar-inner" class="max-w-7xl mx-auto glass-panel rounded-2xl px-6 py-4 flex justify-between items-center shadow-glass transition-all duration-300 hover:bg-navy/60">
             <!-- Logo -->
             <div class="flex items-center gap-3 group cursor-pointer">
                 <div class="w-10 h-10 bg-orange flex items-center justify-center transform -skew-x-12 group-hover:scale-110 transition-transform">
                     <i data-lucide="zap" class="text-navy w-6 h-6 fill-current"></i>
                 </div>
                 <div class="flex flex-col -gap-1">
-                    <span class="font-display text-2xl tracking-widest text-white leading-none">MAXIMUM</span>
+                    <span class="font-display text-2xl tracking-widest text-white leading-none nav-text-main transition-colors duration-300">MAXIMUM</span>
                     <span class="font-display text-[10px] tracking-[0.4em] text-orange leading-none mt-1">ELECTRICAL CONSULTING</span>
                 </div>
             </div>
 
             <!-- Desktop Links -->
             <div class="hidden lg:flex gap-10 items-center">
-                <a href="#services" class="text-gray-300 font-semibold text-sm tracking-widest uppercase hover:text-white relative group">
+                <a href="#services" class="text-gray-300 font-semibold text-sm tracking-widest uppercase hover:text-white relative group nav-link-item transition-colors duration-300">
                     Services
                     <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-orange transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#expertise" class="text-gray-300 font-semibold text-sm tracking-widest uppercase hover:text-white relative group">
-                    Field Expertise
+                <a href="#expertise" class="text-gray-300 font-semibold text-sm tracking-widest uppercase hover:text-white relative group nav-link-item transition-colors duration-300">
+                    Our Expertise
                     <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-orange transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#contact" class="text-gray-300 font-semibold text-sm tracking-widest uppercase hover:text-white relative group">
-                    Contact
+                <a href="#contact" class="text-gray-300 font-semibold text-sm tracking-widest uppercase hover:text-white relative group nav-link-item transition-colors duration-300">
+                    Contact Us
                     <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-orange transition-all duration-300 group-hover:w-full"></span>
                 </a>
             </div>
 
             <!-- CTA -->
             <button onclick="openFunnel()" class="hidden md:flex items-center gap-2 bg-orange text-white px-6 py-3 font-bold text-xs uppercase tracking-[0.2em] hover:bg-white hover:text-navy transition-colors shadow-glow-orange group">
-                <span>Book Consultation</span>
+                <span>Get a Quote</span>
                 <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
             </button>
         </div>
@@ -155,17 +171,17 @@
                 <!-- Status Pill -->
                 <div class="inline-flex items-center gap-3 glass-panel px-4 py-2 rounded-full mb-8 border border-orange/50">
                     <div class="w-2.5 h-2.5 bg-orange rounded-full pulse-ring"></div>
-                    <span class="text-white text-[10px] font-bold uppercase tracking-[0.3em]">1 Volt to a Lightning Bolt</span>
+                    <span class="text-white text-[10px] font-bold uppercase tracking-[0.3em]">Licensed Maryland Master Electricians</span>
                 </div>
                 
                 <!-- Massive Typography -->
                 <h1 class="font-display text-[5rem] md:text-[8rem] lg:text-[9rem] text-white leading-[0.85] tracking-tight mb-6 drop-shadow-2xl">
-                    ARCHITECTS <br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-b from-orange to-red-600">OF ENERGY.</span>
+                    EXPERT ELECTRICIANS. <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-b from-orange to-red-600">RELIABLE SOLUTIONS.</span>
                 </h1>
                 
                 <p class="text-gray-300 font-sans text-lg md:text-xl max-w-lg mb-10 border-l-4 border-orange pl-6 font-light">
-                    From constantly tripping breakers and flickering lights to dangerous, outdated wiring, we solve the everyday electrical hazards homeowners and businesses face. As <span class="text-white font-semibold">licensed Maryland Master Electricians</span>, we provide expert diagnostics and elite solutions across the DMV.
+                    From tripping breakers and flickering lights to full panel upgrades, we fix the electrical headaches homeowners and businesses face every day. Get safe, professional service with upfront pricing and <span class="text-white font-semibold">zero pressure</span>.
                 </p>
 
                 <!-- Glowing Primary CTA -->
@@ -173,12 +189,12 @@
                     <button onclick="openFunnel()" class="group relative inline-flex items-center justify-center bg-orange text-white px-10 py-5 font-bold uppercase tracking-[0.2em] shadow-glow-orange overflow-hidden border border-orange hover:bg-transparent hover:text-orange transition-all duration-300">
                         <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                         <span class="relative z-10 flex items-center gap-3">
-                            Initiate Consultation 
-                            <i data-lucide="power" class="w-5 h-5 fill-current"></i>
+                            Get a Free Quote 
+                            <i data-lucide="clipboard-check" class="w-5 h-5 fill-current"></i>
                         </span>
                     </button>
                     <a href="#services" class="group inline-flex items-center justify-center px-10 py-5 font-bold uppercase tracking-[0.2em] text-white border border-white/20 hover:bg-white hover:text-navy transition-all duration-300">
-                        Explore Matrix
+                        See Our Services
                     </a>
                 </div>
             </div>
@@ -187,7 +203,7 @@
             <div class="w-full lg:w-[450px] shrink-0 mt-12 lg:mt-0">
                 <div class="glass-panel p-8 rounded-2xl shadow-glow-navy border-t-orange border-t-4 relative overflow-hidden">
                     <div class="absolute -right-10 -top-10 opacity-10 pointer-events-none">
-                        <i data-lucide="zap" class="w-40 h-40 text-white fill-current"></i>
+                        <i data-lucide="shield-check" class="w-40 h-40 text-white fill-current"></i>
                     </div>
                     
                     <!-- Core Stats Integrated into Form Box -->
@@ -197,30 +213,30 @@
                             <div class="text-xs text-gray-400 uppercase tracking-widest font-bold">Years Exp</div>
                         </div>
                         <div>
-                            <div class="font-display text-4xl text-white">Master</div>
-                            <div class="text-xs text-gray-400 uppercase tracking-widest font-bold">Electrician</div>
+                            <div class="font-display text-4xl text-white">100%</div>
+                            <div class="text-xs text-gray-400 uppercase tracking-widest font-bold">Licensed & Insured</div>
                         </div>
                     </div>
 
-                    <h3 class="font-display text-3xl text-white mb-2">Schedule A Project</h3>
-                    <p class="text-gray-400 text-sm mb-6">Secured slot directly with a licensed Maryland Master Electrician.</p>
+                    <h3 class="font-display text-3xl text-white mb-2">Request a Free Quote</h3>
+                    <p class="text-gray-400 text-sm mb-6">Tell us what you need. We'll walk you through your options, pressure-free.</p>
                     <form class="space-y-4 relative z-10">
                         <input type="text" placeholder="Full Name" required class="w-full bg-white/10 border border-white/20 text-white placeholder-gray-400 px-4 py-3 text-sm focus:outline-none focus:border-orange transition-colors">
                         <input type="tel" placeholder="Phone Number" required class="w-full bg-white/10 border border-white/20 text-white placeholder-gray-400 px-4 py-3 text-sm focus:outline-none focus:border-orange transition-colors">
                         <div class="relative">
                             <select required class="w-full bg-white/10 border border-white/20 text-white px-4 py-3 text-sm focus:outline-none focus:border-orange transition-colors appearance-none cursor-pointer">
-                                <option value="" disabled selected class="text-gray-900">Project Type...</option>
-                                <option value="diagnostic" class="text-gray-900">Diagnostics & Troubleshooting</option>
+                                <option value="" disabled selected class="text-gray-900">What do you need help with?</option>
+                                <option value="diagnostic" class="text-gray-900">Troubleshooting & Repairs</option>
                                 <option value="emergency" class="text-gray-900">24/7 Emergency Service</option>
-                                <option value="residential" class="text-gray-900">Residential Upgrades / Panels</option>
-                                <option value="commercial" class="text-gray-900">Commercial Installation</option>
+                                <option value="residential" class="text-gray-900">Home Electrical / Panel Upgrade</option>
+                                <option value="commercial" class="text-gray-900">Commercial / Business Electrical</option>
                             </select>
                             <div class="absolute inset-y-0 right-4 flex items-center pointer-events-none">
                                 <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400"></i>
                             </div>
                         </div>
                         <button type="submit" class="w-full bg-orange text-white px-6 py-4 font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-navy transition-colors shadow-glow-orange mt-2 flex justify-center items-center gap-2 group/btn">
-                            Power Up <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
+                            Get My Quote <i data-lucide="arrow-right" class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"></i>
                         </button>
                     </form>
                 </div>
@@ -228,8 +244,8 @@
         </div>
     </section>
 
-    <!-- BREAKING THE GRID: Feature Boxes overlapping Hero (The Counties) -->
-    <section id="expertise" class="relative z-30 max-w-7xl mx-auto px-6 -mt-32 mb-32">
+    <!-- Service Area Feature Boxes (The Counties) -->
+    <section id="expertise" class="relative z-30 max-w-7xl mx-auto px-6 py-20">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Box 1: Prince George's County -->
             <div class="group relative bg-white shadow-2xl hover:-translate-y-4 transition-all duration-500 border-b-4 border-b-transparent hover:border-b-orange overflow-hidden flex flex-col">
@@ -242,7 +258,7 @@
                         <i data-lucide="map-pin" class="w-8 h-8 group-hover:scale-110 transition-transform"></i>
                     </div>
                     <h3 class="font-display text-4xl mb-4 text-navy">Prince George's</h3>
-                    <p class="text-gray-600 font-medium leading-relaxed">Dedicated dispatch for PG County. Whether it's tracking down a dead outlet or performing a critical panel repair, we deliver Master-level oversight directly to you.</p>
+                    <p class="text-gray-600 font-medium leading-relaxed">Fast, reliable electrical service for PG County. From simple outlet repairs to full panel upgrades, we're right around the corner and ready to help.</p>
                 </div>
             </div>
 
@@ -257,7 +273,7 @@
                         <i data-lucide="map-pin" class="w-8 h-8 group-hover:scale-110 transition-transform"></i>
                     </div>
                     <h3 class="font-display text-4xl mb-4 text-white">Montgomery</h3>
-                    <p class="text-gray-400 font-medium leading-relaxed">100% client satisfaction across Montgomery County. From overloaded circuits to high-end residential upgrades, powered by 30+ years of Maryland expertise.</p>
+                    <p class="text-gray-400 font-medium leading-relaxed">Trusted by homeowners and businesses across Montgomery County. We provide clean, professional, and upfront electrical services you can count on.</p>
                 </div>
             </div>
 
@@ -272,7 +288,7 @@
                         <i data-lucide="map-pin" class="w-8 h-8 group-hover:scale-110 transition-transform"></i>
                     </div>
                     <h3 class="font-display text-4xl mb-4 text-navy">Charles County</h3>
-                    <p class="text-gray-600 font-medium leading-relaxed">Rapid Southern Maryland response. Providing Charles County with 24/7 emergency service calls to resolve sudden power losses and hazardous electrical faults.</p>
+                    <p class="text-gray-600 font-medium leading-relaxed">Serving Charles County and Southern Maryland with friendly, expert care. We're here when you need us most—even for 24/7 emergencies.</p>
                 </div>
             </div>
         </div>
@@ -291,32 +307,32 @@
             <!-- Text Content -->
             <div>
                 <h2 class="font-display text-6xl md:text-8xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">
-                    SYSTEM <br><span class="text-orange drop-shadow-2xl">ARCHITECTURE.</span>
+                    SOLVING YOUR <br><span class="text-orange drop-shadow-2xl">ELECTRICAL HEADACHES.</span>
                 </h2>
                 <p class="text-gray-400 text-lg mb-10 max-w-md font-light leading-relaxed">
-                    Tired of resetting breakers every time you run the microwave? Worried about old wiring behind your walls? As licensed Maryland Master Electricians, we deliver comprehensive solutions tailored to safely handle your modern power needs.
+                    Tired of resetting breakers every time you run the microwave? Worried about old wiring behind your walls? As licensed Maryland Master Electricians, we provide safe, straightforward solutions tailored to your modern power needs.
                 </p>
 
                 <div class="space-y-6">
                     <div class="group flex gap-6 items-start">
                         <span class="font-display text-3xl text-navy bg-orange px-3 py-1 group-hover:bg-white transition-colors">01</span>
                         <div>
-                            <h4 class="font-display text-2xl tracking-wide mb-1">Diagnostics & Troubleshooting</h4>
-                            <p class="text-sm text-gray-400 font-medium">Advanced diagnostics to quickly track down and fix dead outlets, mysterious flickering, and hidden wiring faults before they become fire hazards.</p>
+                            <h4 class="font-display text-2xl tracking-wide mb-1">Troubleshooting & Repairs</h4>
+                            <p class="text-sm text-gray-400 font-medium">We quickly track down and fix dead outlets, mysterious flickering, and hidden wiring faults to keep your family safe and comfortable.</p>
                         </div>
                     </div>
                     <div class="group flex gap-6 items-start">
                         <span class="font-display text-3xl text-navy bg-orange px-3 py-1 group-hover:bg-white transition-colors">02</span>
                         <div>
-                            <h4 class="font-display text-2xl tracking-wide mb-1">Breakers, Paneling & Heavy-Ups</h4>
-                            <p class="text-sm text-gray-400 font-medium">Stop relying on overloaded, outdated panels. We perform safe, efficient heavy-ups so you can confidently run new appliances, hot tubs, and EV chargers.</p>
+                            <h4 class="font-display text-2xl tracking-wide mb-1">Breakers & Panel Upgrades</h4>
+                            <p class="text-sm text-gray-400 font-medium">Stop relying on overloaded, outdated panels. We safely upgrade your system so you can confidently run new appliances, hot tubs, and EV chargers.</p>
                         </div>
                     </div>
                     <div class="group flex gap-6 items-start">
                         <span class="font-display text-3xl text-navy bg-orange px-3 py-1 group-hover:bg-white transition-colors">03</span>
                         <div>
-                            <h4 class="font-display text-2xl tracking-wide mb-1">Commercial & Mentorship</h4>
-                            <p class="text-sm text-gray-400 font-medium">Large commercial projects with scaling staffing, plus Master-level electrical consulting and mentorship for apprentices.</p>
+                            <h4 class="font-display text-2xl tracking-wide mb-1">Commercial & Business Services</h4>
+                            <p class="text-sm text-gray-400 font-medium">We provide reliable electrical installations and ongoing maintenance to keep your business running smoothly without interruption.</p>
                         </div>
                     </div>
                 </div>
@@ -335,21 +351,21 @@
                             <div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
                             <div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
                         </div>
-                        <span class="font-display tracking-[0.2em] text-xs text-gray-400">MAX_DIAGNOSTIC_TERMINAL</span>
+                        <span class="font-display tracking-[0.2em] text-xs text-gray-400">OUR_COMMITMENT_TO_YOU</span>
                     </div>
 
                     <div class="p-6 space-y-8 bg-navy/80 rounded-b-lg backdrop-blur-2xl">
                         <!-- Stat Grid -->
                         <div class="grid grid-cols-2 gap-4">
                             <div class="bg-white/5 border border-white/10 p-4 rounded-lg relative overflow-hidden">
-                                <p class="text-xs text-gray-400 uppercase tracking-widest font-bold mb-2">Emergency Response</p>
+                                <p class="text-xs text-gray-400 uppercase tracking-widest font-bold mb-2">Emergency Service</p>
                                 <div class="flex items-end gap-2">
                                     <span class="font-display text-4xl text-orange">24/7</span>
                                 </div>
                             </div>
                             <div class="bg-white/5 border border-white/10 p-4 rounded-lg relative overflow-hidden">
                                 <div class="absolute inset-0 bg-gradient-to-r from-transparent via-orange/10 to-transparent animate-[shimmer_3s_infinite]"></div>
-                                <p class="text-xs text-gray-400 uppercase tracking-widest font-bold mb-2">Client Satisfaction</p>
+                                <p class="text-xs text-gray-400 uppercase tracking-widest font-bold mb-2">Upfront Pricing</p>
                                 <div class="flex items-end gap-2">
                                     <span class="font-display text-4xl text-white">100%</span>
                                 </div>
@@ -359,7 +375,7 @@
                         <!-- Progress Bars -->
                         <div>
                             <div class="flex justify-between text-xs font-bold uppercase tracking-widest mb-2">
-                                <span class="text-gray-400">Master Oversight Rating</span>
+                                <span class="text-gray-400">Master Electrician Standards</span>
                                 <span class="text-orange">MAXIMUM</span>
                             </div>
                             <div class="h-2 w-full bg-white/10 rounded-full overflow-hidden">
@@ -368,8 +384,8 @@
                         </div>
                         <div>
                             <div class="flex justify-between text-xs font-bold uppercase tracking-widest mb-2">
-                                <span class="text-gray-400">Maryland Regulatory Compliance</span>
-                                <span class="text-green-400">100%</span>
+                                <span class="text-gray-400">Licensed & Insured</span>
+                                <span class="text-green-400">YES</span>
                             </div>
                             <div class="h-2 w-full bg-white/10 rounded-full overflow-hidden">
                                 <div class="h-full bg-green-400 w-full shimmer-bar"></div>
@@ -382,12 +398,87 @@
         </div>
     </section>
 
+    <!-- TESTIMONIALS SECTION (Comfort & Trust Signals) -->
+    <section class="py-24 px-6 bg-gray-50 border-y border-gray-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-5xl md:text-6xl text-navy leading-none mb-4">WHAT OUR <span class="text-orange">NEIGHBORS SAY</span></h2>
+                <p class="text-gray-500 font-medium max-w-2xl mx-auto">Don't just take our word for it. Here is what real homeowners and business owners in Maryland have to say about working with us.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-8 shadow-xl border-t-4 border-t-orange rounded-b-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-orange mb-4">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-gray-600 font-medium italic mb-6">"Kyla and her team were lifesavers. They found a hidden wiring issue that two other companies missed. Extremely professional and explained everything clearly without pressuring us."</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-navy rounded-full flex items-center justify-center text-white font-bold">S</div>
+                        <div>
+                            <p class="font-bold text-navy text-sm">Sarah M.</p>
+                            <p class="text-gray-400 text-xs uppercase tracking-wider">Bowie, MD</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-8 shadow-xl border-t-4 border-t-navy rounded-b-xl flex flex-col justify-between md:-mt-6">
+                    <div>
+                        <div class="flex text-orange mb-4">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-gray-600 font-medium italic mb-6">"Upgraded our home panel for an EV charger. The process was smooth, the pricing was completely upfront, and they left the work area spotless. Highly recommend!"</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-orange rounded-full flex items-center justify-center text-white font-bold">J</div>
+                        <div>
+                            <p class="font-bold text-navy text-sm">James T.</p>
+                            <p class="text-gray-400 text-xs uppercase tracking-wider">Bethesda, MD</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-8 shadow-xl border-t-4 border-t-orange rounded-b-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-orange mb-4">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-gray-600 font-medium italic mb-6">"Fast response when our business lost power in half the building. They had us back up and running within hours. It’s hard to find contractors this reliable."</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-navy rounded-full flex items-center justify-center text-white font-bold">M</div>
+                        <div>
+                            <p class="font-bold text-navy text-sm">Mark R.</p>
+                            <p class="text-gray-400 text-xs uppercase tracking-wider">Waldorf, MD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- IMAGE-RICH SERVICE CARDS (Real Projects, Real Results) -->
     <section class="py-32 px-6">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-20">
-                <h2 class="font-display text-6xl md:text-8xl text-navy leading-none mb-4">FIELD <span class="text-orange">EXPERTISE</span></h2>
-                <p class="text-gray-500 font-medium max-w-2xl mx-auto">Real Projects, Real Results. See our work in action across residential and commercial properties.</p>
+                <h2 class="font-display text-6xl md:text-8xl text-navy leading-none mb-4">OUR <span class="text-orange">EXPERTISE</span></h2>
+                <p class="text-gray-500 font-medium max-w-2xl mx-auto">See the kind of work we do every day across residential and commercial properties.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -400,12 +491,12 @@
                     
                     <div class="relative z-10 p-10 w-full transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
                         <div class="w-12 h-1 bg-orange mb-6 group-hover:w-full transition-all duration-700"></div>
-                        <h3 class="font-display text-4xl text-white mb-2">System Diagnostics</h3>
+                        <h3 class="font-display text-4xl text-white mb-2">Troubleshooting & Repairs</h3>
                         <p class="text-gray-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-                            Master-level troubleshooting to resolve persistent tripping breakers, dead outlets, and dangerous electrical faults before they escalate.
+                            We don't guess—we test. We find the real cause of tripping breakers, dead outlets, and dangerous electrical faults to keep your home safe.
                         </p>
                         <button onclick="openFunnel()" class="mt-6 flex items-center gap-2 text-orange font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200 cursor-pointer">
-                            Technical Specs <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </button>
                     </div>
                 </div>
@@ -421,10 +512,10 @@
                         <div class="w-12 h-1 bg-white mb-6 group-hover:w-full transition-all duration-700"></div>
                         <h3 class="font-display text-4xl text-white mb-2">Residential Upgrades</h3>
                         <p class="text-gray-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-                            Expert repairs for overloaded panels, breakers, and outdated wiring. Safe and efficient electrical system heavy-ups for your home.
+                            Expert repairs for overloaded panels, breakers, and outdated wiring. We provide safe and efficient heavy-ups so you can power your modern life.
                         </p>
                         <button onclick="openFunnel()" class="mt-6 flex items-center gap-2 text-white font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200 cursor-pointer">
-                            Technical Specs <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </button>
                     </div>
                 </div>
@@ -438,12 +529,12 @@
                     
                     <div class="relative z-10 p-10 w-full transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
                         <div class="w-12 h-1 bg-orange mb-6 group-hover:w-full transition-all duration-700"></div>
-                        <h3 class="font-display text-4xl text-white mb-2">Commercial Systems</h3>
+                        <h3 class="font-display text-4xl text-white mb-2">Commercial Services</h3>
                         <p class="text-gray-400 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-                            Precision conduit work, large commercial projects with scaling staffing, and professional Maryland Master Electrician oversight.
+                            Precision conduit work, large commercial project execution, and professional Maryland Master Electrician oversight for your business.
                         </p>
                         <button onclick="openFunnel()" class="mt-6 flex items-center gap-2 text-orange font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200 cursor-pointer">
-                            Technical Specs <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </button>
                     </div>
                 </div>
@@ -466,8 +557,8 @@
 
             <!-- STEP 1: Project Type -->
             <div id="funnel-step-1" class="funnel-step block funnel-enter">
-                <h2 class="font-display text-5xl md:text-6xl text-white mb-2 text-center">HOW CAN WE <span class="text-orange">HELP?</span></h2>
-                <p class="text-gray-400 text-center mb-8">Select the service you require below.</p>
+                <h2 class="font-display text-5xl md:text-6xl text-white mb-2 text-center">HOW CAN WE <span class="text-orange">HELP TODAY?</span></h2>
+                <p class="text-gray-400 text-center mb-8">Select the service you need below to get started.</p>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <button onclick="nextStep(2)" class="bg-white/5 border border-white/10 hover:border-orange hover:bg-orange/10 p-6 flex flex-col items-center justify-center gap-4 transition-all group">
@@ -494,7 +585,7 @@
                 <button onclick="prevStep(1)" class="text-gray-400 hover:text-white flex items-center gap-2 text-xs font-bold uppercase tracking-widest mb-6 transition-colors">
                     <i data-lucide="arrow-left" class="w-4 h-4"></i> Back
                 </button>
-                <h2 class="font-display text-5xl md:text-6xl text-white mb-2 text-center">WHERE IS THE <span class="text-orange">PROJECT?</span></h2>
+                <h2 class="font-display text-5xl md:text-6xl text-white mb-2 text-center">WHERE ARE <span class="text-orange">YOU LOCATED?</span></h2>
                 <p class="text-gray-400 text-center mb-8">We serve Southern Maryland and the DMV region.</p>
                 
                 <div class="flex flex-col gap-4">
@@ -518,8 +609,8 @@
                 <button onclick="prevStep(2)" class="text-gray-400 hover:text-white flex items-center gap-2 text-xs font-bold uppercase tracking-widest mb-6 transition-colors">
                     <i data-lucide="arrow-left" class="w-4 h-4"></i> Back
                 </button>
-                <h2 class="font-display text-5xl md:text-6xl text-white mb-2 text-center">SCHEDULE <span class="text-orange">CONSULTATION.</span></h2>
-                <p class="text-gray-400 text-center mb-8">Final step. Where should our Maryland Master Electrician contact you?</p>
+                <h2 class="font-display text-5xl md:text-6xl text-white mb-2 text-center">GET YOUR <span class="text-orange">QUOTE.</span></h2>
+                <p class="text-gray-400 text-center mb-8">Final step. Where should we send your information? We'll reach out shortly to discuss your options.</p>
                 
                 <form class="space-y-4">
                     <input type="text" placeholder="Full Name" required class="w-full bg-white/5 border border-white/10 text-white placeholder-gray-500 px-6 py-5 font-semibold focus:outline-none focus:border-orange transition-colors rounded-none">
@@ -527,15 +618,15 @@
                     <input type="email" placeholder="Email Address" required class="w-full bg-white/5 border border-white/10 text-white placeholder-gray-500 px-6 py-5 font-semibold focus:outline-none focus:border-orange transition-colors rounded-none">
                     
                     <button type="submit" class="w-full bg-orange text-white px-10 py-6 mt-4 font-bold text-lg uppercase tracking-[0.2em] shadow-glow-orange hover:bg-white hover:text-navy transition-colors flex justify-center items-center gap-3 group/btn">
-                        Submit Request <i data-lucide="power" class="w-5 h-5 group-hover/btn:scale-125 transition-transform"></i>
+                        Get My Quote <i data-lucide="power" class="w-5 h-5 group-hover/btn:scale-125 transition-transform"></i>
                     </button>
                 </form>
             </div>
         </div>
     </div>
 
-    <!-- OVERLAPPING CONTACT FORM -->
-    <div class="relative bg-white pt-20" id="contact">
+    <!-- CONTACT FORM -->
+    <div class="relative bg-[#FFF4ED] pt-32 pb-16" id="contact">
         <!-- Floating Contact Form Box -->
         <div class="relative z-30 max-w-5xl mx-auto px-6 -mb-32">
             <div class="bg-orange p-10 md:p-16 shadow-glow-orange flex flex-col items-center justify-center gap-10 overflow-hidden group border border-orange">
@@ -547,8 +638,8 @@
                 <!-- Premium Glassmorphism Form -->
                 <form class="relative z-10 w-full max-w-3xl grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div class="col-span-1 md:col-span-2 mb-4 text-center">
-                        <h2 class="font-display text-5xl md:text-7xl text-navy leading-none mb-2">HAVE A <span class="text-white">QUESTION?</span></h2>
-                        <p class="text-navy font-bold">Reach out to our expert team for general inquiries or support.</p>
+                        <h2 class="font-display text-5xl md:text-7xl text-navy leading-none mb-2">NEED TO TALK <span class="text-white">IT THROUGH?</span></h2>
+                        <p class="text-navy font-bold">Reach out to our expert team. We'll answer your questions and walk you through your options with zero pressure.</p>
                     </div>
                     <div class="col-span-1">
                         <input type="text" placeholder="Full Name" required
@@ -564,10 +655,13 @@
                                   class="w-full bg-white/20 border border-white/30 text-navy placeholder-navy/70 px-6 py-4 font-semibold focus:outline-none focus:bg-white/40 transition-colors rounded-none resize-none"></textarea>
                     </div>
                     
-                    <div class="md:col-span-2 mt-4">
-                        <button type="submit" class="w-full bg-navy text-white px-10 py-6 font-bold text-lg uppercase tracking-[0.2em] hover:bg-white hover:text-navy transition-colors shadow-2xl flex items-center justify-center gap-4 group/btn">
+                    <div class="md:col-span-2 mt-4 flex flex-col sm:flex-row gap-4">
+                        <button type="submit" class="w-full sm:w-1/2 bg-navy text-white px-10 py-6 font-bold text-lg uppercase tracking-[0.2em] hover:bg-white hover:text-navy transition-colors shadow-2xl flex items-center justify-center gap-4 group/btn">
                             Send Message <i data-lucide="send" class="w-5 h-5 group-hover/btn:translate-x-1 transition-transform"></i>
                         </button>
+                        <a href="tel:3012460053" class="w-full sm:w-1/2 bg-white/20 border border-white/30 text-navy px-10 py-6 font-bold text-lg uppercase tracking-[0.2em] hover:bg-white hover:text-navy transition-colors flex items-center justify-center gap-4 group/btn2">
+                            Call Us Instead <i data-lucide="phone" class="w-5 h-5 group-hover/btn2:rotate-12 transition-transform"></i>
+                        </a>
                     </div>
                 </form>
             </div>
@@ -590,7 +684,7 @@
                         <div class="flex flex-wrap gap-3 mb-8">
                             <span class="bg-white/5 border border-white/10 px-3 py-1 text-[10px] uppercase tracking-widest font-bold text-orange">100% Woman-Owned (Kyla Morton)</span>
                             <span class="bg-white/5 border border-white/10 px-3 py-1 text-[10px] uppercase tracking-widest font-bold text-white">Maryland Master Electrician</span>
-                            <span class="bg-white/5 border border-white/10 px-3 py-1 text-[10px] uppercase tracking-widest font-bold text-white">Fully Licensed in Maryland & Insured</span>
+                            <span class="bg-white/5 border border-white/10 px-3 py-1 text-[10px] uppercase tracking-widest font-bold text-white">Fully Licensed & Insured</span>
                         </div>
                     </div>
 
@@ -649,6 +743,16 @@
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
+
+        // Navbar Scroll Event
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled-nav');
+            } else {
+                navbar.classList.remove('scrolled-nav');
+            }
+        });
 
         // Click Funnel Logic
         const modal = document.getElementById('funnel-modal');
