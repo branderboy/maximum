@@ -98,7 +98,7 @@
     </div>
 
     <!-- NAVBAR -->
-    <nav id="navbar" class="sticky top-0 w-full z-50 bg-gradient-to-b from-primary/25 via-secondary to-secondary md:bg-none md:bg-white/95 backdrop-blur-md border-b border-primary/30 md:border-gray-100 shadow-[inset_0_2px_0_rgba(255,255,255,0.12),0_10px_30px_-10px_rgba(0,163,255,0.35)] md:shadow-none transition-all duration-300 py-4">
+    <nav id="navbar" class="sticky top-0 w-full z-50 bg-[#0C2340] md:bg-white/95 backdrop-blur-md border-b border-[#1E3A6B] md:border-gray-100 shadow-[inset_0_1px_0_rgba(255,255,255,0.15)] md:shadow-none transition-all duration-300 py-4">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center text-white md:text-black">
             <div class="flex items-center gap-3">
                 <img src="images/logo.png" alt="Maximum Electrical Consulting Logo" class="h-24 md:h-28 w-auto object-contain">
@@ -120,6 +120,21 @@
                 <button id="mobile-menu-btn" class="lg:hidden p-2 text-white md:text-black">
                     <i data-lucide="menu" class="w-8 h-8"></i>
                 </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-[#1E3A6B] md:border-gray-100 bg-[#0C2340] md:bg-white/95 backdrop-blur-md">
+            <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-5 text-sm font-black uppercase tracking-[0.15em] text-white md:text-black">
+                <a href="#home" class="hover:text-primary transition-colors">Home</a>
+                <a href="#service-area" class="hover:text-primary transition-colors">Service Area</a>
+                <a href="#how-it-works" class="hover:text-primary transition-colors">How We Work</a>
+                <a href="#about" class="hover:text-primary transition-colors">About</a>
+                <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+                <a href="tel:3012460053" class="sm:hidden flex items-center gap-3 pt-4 mt-2 border-t border-white/20 md:border-gray-200">
+                    <i data-lucide="phone" class="w-5 h-5 text-primary"></i>
+                    <span class="font-heading font-black text-xl normal-case tracking-normal">(301) 246-0053</span>
+                </a>
             </div>
         </div>
     </nav>
