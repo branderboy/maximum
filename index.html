@@ -273,11 +273,15 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-8 relative">
                     <!-- Step 1 -->
-                    <div class="flex flex-col items-center text-center px-4">
+                    <div class="flex flex-col items-center text-center px-4 relative">
                         <div class="relative mb-8">
                             <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary via-primary to-secondary border-4 border-secondary flex items-center justify-center shadow-lg shadow-primary/40 relative z-10">
                                 <span class="text-white font-heading font-black text-2xl tracking-tight">01</span>
                             </div>
+                        </div>
+                        <!-- Arrow to Step 2 -->
+                        <div class="hidden md:flex absolute top-6 -right-6 z-20 animate-process-arrow text-primary">
+                            <i data-lucide="arrow-right" class="w-10 h-10 stroke-[2.5]"></i>
                         </div>
                         <h4 class="text-xs font-black text-brandOrange uppercase mb-3 tracking-[0.3em]">Step One</h4>
                         <h3 class="text-2xl md:text-3xl font-heading font-black text-secondary uppercase mb-4 tracking-tight">Request A Quote</h3>
@@ -285,11 +289,15 @@
                     </div>
 
                     <!-- Step 2 -->
-                    <div class="flex flex-col items-center text-center px-4">
+                    <div class="flex flex-col items-center text-center px-4 relative">
                         <div class="relative mb-8">
                             <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary via-primary to-secondary border-4 border-secondary flex items-center justify-center shadow-lg shadow-primary/40 relative z-10">
                                 <span class="text-white font-heading font-black text-2xl tracking-tight">02</span>
                             </div>
+                        </div>
+                        <!-- Arrow to Step 3 -->
+                        <div class="hidden md:flex absolute top-6 -right-6 z-20 animate-process-arrow text-primary">
+                            <i data-lucide="arrow-right" class="w-10 h-10 stroke-[2.5]"></i>
                         </div>
                         <h4 class="text-xs font-black text-brandOrange uppercase mb-3 tracking-[0.3em]">Step Two</h4>
                         <h3 class="text-2xl md:text-3xl font-heading font-black text-secondary uppercase mb-4 tracking-tight">Master Audit</h3>
@@ -443,44 +451,79 @@
                 <p class="text-gray-500 font-bold uppercase text-[12px] tracking-widest mt-4">Master-Level Care for Southern Maryland</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="area-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl group border border-transparent text-black">
-                    <div class="h-64 relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="Prince George's County Homes">
-                        <div class="absolute top-6 left-6 bg-primary text-white px-4 py-2 rounded font-black text-[10px] uppercase tracking-widest shadow-lg">Maryland</div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Prince George's -->
+                <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-primary hover:shadow-xl hover:shadow-primary/10 transition-all">
+                    <!-- Project visual header -->
+                    <div class="relative h-48 bg-gradient-to-br from-secondary via-secondary to-primary/40 overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 20px 20px;"></div>
+                        <i data-lucide="layout-grid" class="w-24 h-24 text-white/90 stroke-[1.25] relative z-10 group-hover:scale-110 transition-transform"></i>
+                        <!-- Blue project tag -->
+                        <span class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-[0.25em] px-3 py-1.5 rounded-full shadow-lg shadow-primary/50">Panel Upgrade</span>
                     </div>
-                    <div class="p-10 text-center md:text-left text-black text-black">
-                        <h3 class="text-2xl font-heading font-black mb-4 uppercase tracking-tighter group-hover:text-primary transition-colors text-secondary">Prince George's</h3>
-                        <p class="text-xs text-gray-500 mb-8 leading-relaxed font-bold uppercase tracking-widest italic text-gray-500">Neighborly Service for PG County.</p>
-                        <button onclick="openFunnel()" class="bg-secondary text-white px-8 py-4 rounded font-black text-[10px] uppercase tracking-widest hover:bg-primary transition-all w-full flex justify-center items-center gap-3 text-white">
-                            Request Service <i data-lucide="map-pin" class="w-4 h-4 text-primary"></i>
+                    <div class="p-8">
+                        <h3 class="text-2xl md:text-3xl font-heading font-black uppercase tracking-tight text-secondary mb-1">Prince George's</h3>
+                        <p class="text-[11px] font-black uppercase tracking-[0.25em] text-primary mb-5">Maryland County</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2 text-sm text-gray-600"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Bowie</li>
+                            <li class="flex items-center gap-2 text-sm text-gray-600"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Upper Marlboro</li>
+                            <li class="flex items-center gap-2 text-sm text-gray-600"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Laurel &amp; Greenbelt</li>
+                        </ul>
+                        <div class="flex items-center gap-2 mb-5 text-xs font-black uppercase tracking-widest text-secondary">
+                            <i data-lucide="clock" class="w-4 h-4 text-primary"></i> 60-Minute Response
+                        </div>
+                        <button onclick="openFunnel()" class="bg-secondary text-white px-6 py-3 rounded font-black text-[10px] uppercase tracking-widest hover:bg-primary transition-all w-full">
+                            Book in PG County
                         </button>
                     </div>
                 </div>
-                <div class="area-card bg-secondary rounded-3xl overflow-hidden shadow-2xl text-white md:-translate-y-10 border-4 border-primary/20">
-                    <div class="h-64 relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover opacity-90" alt="Montgomery County Homes">
-                        <div class="absolute inset-0 bg-gradient-to-t from-secondary via-transparent to-transparent opacity-80"></div>
-                        <div class="absolute top-6 left-6 bg-primary text-white px-4 py-2 rounded font-black text-[10px] uppercase tracking-widest shadow-lg">Primary Reach</div>
+
+                <!-- Montgomery (featured) -->
+                <div class="group bg-secondary rounded-2xl border-4 border-primary/30 overflow-hidden shadow-2xl md:-translate-y-4">
+                    <!-- Project visual header -->
+                    <div class="relative h-48 bg-gradient-to-br from-primary/40 via-secondary to-secondary overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 20px 20px;"></div>
+                        <i data-lucide="battery-charging" class="w-24 h-24 text-white/90 stroke-[1.25] relative z-10 group-hover:scale-110 transition-transform"></i>
+                        <span class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-[0.25em] px-3 py-1.5 rounded-full shadow-lg shadow-primary/50">EV Charger</span>
+                        <span class="absolute top-4 right-4 bg-brandOrange text-white text-[9px] font-black uppercase tracking-[0.25em] px-3 py-1.5 rounded-full">Primary Reach</span>
                     </div>
-                    <div class="p-10 text-center text-white">
-                        <h3 class="text-2xl font-heading font-black mb-4 uppercase tracking-tighter">Montgomery</h3>
-                        <p class="text-white/80 text-xs mb-8 leading-relaxed font-black uppercase tracking-widest italic">Serving Bethesda, Rockville & Beyond.</p>
-                        <button onclick="openFunnel()" class="bg-white text-secondary px-8 py-4 rounded font-black text-[10px] uppercase tracking-widest hover:bg-primary hover:text-white transition-all w-full shadow-lg">
-                            Schedule in Montgomery
+                    <div class="p-8">
+                        <h3 class="text-2xl md:text-3xl font-heading font-black uppercase tracking-tight text-white mb-1">Montgomery</h3>
+                        <p class="text-[11px] font-black uppercase tracking-[0.25em] text-primary mb-5">Maryland County</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2 text-sm text-white/80"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Bethesda</li>
+                            <li class="flex items-center gap-2 text-sm text-white/80"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Rockville</li>
+                            <li class="flex items-center gap-2 text-sm text-white/80"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Silver Spring &amp; Gaithersburg</li>
+                        </ul>
+                        <div class="flex items-center gap-2 mb-5 text-xs font-black uppercase tracking-widest text-white">
+                            <i data-lucide="clock" class="w-4 h-4 text-primary"></i> 60-Minute Response
+                        </div>
+                        <button onclick="openFunnel()" class="bg-white text-secondary px-6 py-3 rounded font-black text-[10px] uppercase tracking-widest hover:bg-primary hover:text-white transition-all w-full">
+                            Book in Montgomery
                         </button>
                     </div>
                 </div>
-                <div class="area-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl group border border-transparent text-black text-black">
-                    <div class="h-64 relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="Charles County Homes">
-                        <div class="absolute top-6 left-6 bg-primary text-white px-4 py-2 rounded font-black text-[10px] uppercase tracking-widest shadow-lg">Maryland</div>
+
+                <!-- Charles County -->
+                <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-primary hover:shadow-xl hover:shadow-primary/10 transition-all">
+                    <div class="relative h-48 bg-gradient-to-br from-secondary via-secondary to-primary/40 overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 20px 20px;"></div>
+                        <i data-lucide="lightbulb" class="w-24 h-24 text-white/90 stroke-[1.25] relative z-10 group-hover:scale-110 transition-transform"></i>
+                        <span class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-[0.25em] px-3 py-1.5 rounded-full shadow-lg shadow-primary/50">Lighting Install</span>
                     </div>
-                    <div class="p-10 text-center md:text-left text-black text-black">
-                        <h3 class="text-2xl font-heading font-black mb-4 uppercase tracking-tighter group-hover:text-primary transition-colors text-secondary text-black">Charles County</h3>
-                        <p class="text-xs text-gray-500 mb-8 leading-relaxed font-bold uppercase tracking-widest italic text-gray-500">Rapid Support for Southern Maryland.</p>
-                        <button onclick="openFunnel()" class="bg-secondary text-white px-8 py-4 rounded font-black text-[10px] uppercase tracking-widest hover:bg-primary transition-all w-full flex justify-center items-center gap-3 text-white">
-                            Request Service <i data-lucide="map-pin" class="w-4 h-4 text-primary text-white"></i>
+                    <div class="p-8">
+                        <h3 class="text-2xl md:text-3xl font-heading font-black uppercase tracking-tight text-secondary mb-1">Charles</h3>
+                        <p class="text-[11px] font-black uppercase tracking-[0.25em] text-primary mb-5">Maryland County</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2 text-sm text-gray-600"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Waldorf</li>
+                            <li class="flex items-center gap-2 text-sm text-gray-600"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> La Plata</li>
+                            <li class="flex items-center gap-2 text-sm text-gray-600"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Indian Head &amp; Bryans Road</li>
+                        </ul>
+                        <div class="flex items-center gap-2 mb-5 text-xs font-black uppercase tracking-widest text-secondary">
+                            <i data-lucide="clock" class="w-4 h-4 text-primary"></i> 60-Minute Response
+                        </div>
+                        <button onclick="openFunnel()" class="bg-secondary text-white px-6 py-3 rounded font-black text-[10px] uppercase tracking-widest hover:bg-primary transition-all w-full">
+                            Book in Charles
                         </button>
                     </div>
                 </div>
@@ -488,89 +531,41 @@
         </div>
     </section>
 
-    <!-- TESTIMONIALS (Book Design) -->
-    <section class="py-24 px-6 bg-white relative overflow-hidden">
-        <div class="max-w-6xl mx-auto relative">
-            <!-- Header -->
-            <div class="text-center mb-14">
-                <div class="inline-flex items-center gap-3 mb-4 text-brandOrange">
-                    <span class="w-10 h-px bg-brandOrange"></span>
-                    <span class="font-black uppercase tracking-[0.4em] text-[11px]">Client Voices</span>
-                    <span class="w-10 h-px bg-brandOrange"></span>
+    <!-- TESTIMONIALS -->
+    <section class="py-24 px-6 bg-sky-100">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+            <div class="w-full lg:w-1/3">
+                <div class="inline-flex items-center gap-3 mb-6 text-primary">
+                    <span class="w-10 h-[2px] bg-primary"></span>
+                    <span class="font-black uppercase tracking-[0.4em] text-[10px]">Client Voices</span>
                 </div>
-                <h2 class="text-4xl md:text-6xl font-heading font-black leading-[1.05] uppercase tracking-tighter text-secondary">
-                    Neighbors Who <span class="italic text-brandOrange">Trust Us</span>
+                <h2 class="text-4xl md:text-5xl font-heading font-black leading-[1.1] mb-8 uppercase tracking-tighter text-secondary">
+                    Neighbors Who <br><span class="italic text-primary">Trust Us.</span>
                 </h2>
-                <div class="flex items-center justify-center gap-1 text-yellow-400 mt-5">
+                <div class="flex text-yellow-400 mb-4">
                     <i data-lucide="star" class="w-5 h-5 fill-yellow-400"></i>
                     <i data-lucide="star" class="w-5 h-5 fill-yellow-400"></i>
                     <i data-lucide="star" class="w-5 h-5 fill-yellow-400"></i>
                     <i data-lucide="star" class="w-5 h-5 fill-yellow-400"></i>
                     <i data-lucide="star" class="w-5 h-5 fill-yellow-400"></i>
-                    <span class="text-gray-500 font-black text-[11px] uppercase tracking-[0.3em] ml-3">5.0 Maryland Excellence</span>
                 </div>
+                <p class="text-[12px] font-black text-gray-400 uppercase tracking-widest italic">5.0 Star Maryland Excellence</p>
             </div>
-
-            <!-- Book -->
-            <div class="testimonial-book relative mx-auto max-w-5xl">
-                <!-- Book shadow below -->
-                <div class="absolute -bottom-4 left-8 right-8 h-6 bg-black/60 blur-xl rounded-full"></div>
-
-                <div class="relative flex flex-col md:flex-row rounded-sm overflow-hidden shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)]">
-                    <!-- Left Page -->
-                    <div class="relative w-full md:w-1/2 bg-[#FAF5E9] p-10 md:p-14 md:pr-16">
-                        <!-- Page stack edge (left) -->
-                        <div class="hidden md:block absolute top-0 bottom-0 -left-2 w-2 bg-gradient-to-r from-[#D4C8A8] to-[#FAF5E9]"></div>
-                        <!-- Inner gutter shadow -->
-                        <div class="hidden md:block absolute top-0 bottom-0 right-0 w-12 bg-gradient-to-l from-black/20 via-black/5 to-transparent pointer-events-none"></div>
-                        <!-- Decorative flourish -->
-                        <div class="flex items-center gap-3 mb-6">
-                            <span class="w-8 h-px bg-secondary/40"></span>
-                            <i data-lucide="bookmark" class="w-4 h-4 text-brandOrange fill-brandOrange"></i>
-                            <span class="w-8 h-px bg-secondary/40"></span>
-                        </div>
-                        <!-- Quote glyph -->
-                        <div class="font-heading text-7xl leading-none text-brandOrange/40 mb-2 select-none">&ldquo;</div>
-                        <p class="font-serif italic text-secondary text-lg md:text-xl leading-relaxed mb-8" style="font-family: 'Georgia', serif;">
-                            They found a hidden wiring issue that two others missed. Very clean work and friendly. Explained everything perfectly.
-                        </p>
-                        <div class="flex items-center gap-4 pt-6 border-t border-secondary/10">
-                            <div class="w-12 h-12 rounded-full bg-brandOrange/15 border border-brandOrange/30 flex items-center justify-center font-heading font-black text-brandOrange text-sm">SM</div>
-                            <div>
-                                <p class="font-heading font-black text-secondary text-sm uppercase tracking-widest">Sarah M.</p>
-                                <p class="text-[10px] text-secondary/60 font-bold uppercase tracking-widest mt-0.5">Bowie, MD</p>
-                            </div>
-                        </div>
-                        <!-- Page number -->
-                        <p class="absolute bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-secondary/40 tracking-widest" style="font-family: 'Georgia', serif;">&mdash; I &mdash;</p>
+            <div class="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-light p-10 rounded-3xl border border-gray-100 relative group hover:border-primary transition-all duration-500 shadow-sm">
+                    <i data-lucide="quote" class="absolute top-10 right-10 w-12 h-12 text-primary/10 fill-current"></i>
+                    <p class="text-gray-600 mb-8 font-medium italic leading-relaxed text-sm">"They found a hidden wiring issue that two others missed. Very clean work and friendly. Explained everything perfectly."</p>
+                    <div class="flex items-center gap-5">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center font-black text-primary text-xs">SM</div>
+                        <p class="font-black text-[11px] uppercase tracking-widest text-secondary">Sarah M. <span class="block text-[9px] text-gray-400 font-bold mt-1 uppercase tracking-normal">Bowie, MD</span></p>
                     </div>
-
-                    <!-- Spine -->
-                    <div class="hidden md:block w-px bg-gradient-to-b from-secondary/30 via-secondary/50 to-secondary/30"></div>
-
-                    <!-- Right Page -->
-                    <div class="relative w-full md:w-1/2 bg-[#FAF5E9] p-10 md:p-14 md:pl-16 border-t md:border-t-0 border-secondary/10">
-                        <!-- Page stack edge (right) -->
-                        <div class="hidden md:block absolute top-0 bottom-0 -right-2 w-2 bg-gradient-to-l from-[#D4C8A8] to-[#FAF5E9]"></div>
-                        <!-- Inner gutter shadow -->
-                        <div class="hidden md:block absolute top-0 bottom-0 left-0 w-12 bg-gradient-to-r from-black/20 via-black/5 to-transparent pointer-events-none"></div>
-                        <div class="flex items-center gap-3 mb-6">
-                            <span class="w-8 h-px bg-secondary/40"></span>
-                            <i data-lucide="bookmark" class="w-4 h-4 text-brandOrange fill-brandOrange"></i>
-                            <span class="w-8 h-px bg-secondary/40"></span>
-                        </div>
-                        <div class="font-heading text-7xl leading-none text-brandOrange/40 mb-2 select-none">&ldquo;</div>
-                        <p class="font-serif italic text-secondary text-lg md:text-xl leading-relaxed mb-8" style="font-family: 'Georgia', serif;">
-                            Upgraded our home panel for an EV charger. Upfront pricing and spotless cleanup. Highly recommend Maximum Electrical!
-                        </p>
-                        <div class="flex items-center gap-4 pt-6 border-t border-secondary/10">
-                            <div class="w-12 h-12 rounded-full bg-brandOrange/15 border border-brandOrange/30 flex items-center justify-center font-heading font-black text-brandOrange text-sm">JT</div>
-                            <div>
-                                <p class="font-heading font-black text-secondary text-sm uppercase tracking-widest">James T.</p>
-                                <p class="text-[10px] text-secondary/60 font-bold uppercase tracking-widest mt-0.5">Bethesda, MD</p>
-                            </div>
-                        </div>
-                        <p class="absolute bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-secondary/40 tracking-widest" style="font-family: 'Georgia', serif;">&mdash; II &mdash;</p>
+                </div>
+                <div class="bg-light p-10 rounded-3xl border border-gray-100 relative group hover:border-primary transition-all duration-500 shadow-sm border-t-8 border-t-primary">
+                    <i data-lucide="quote" class="absolute top-10 right-10 w-12 h-12 text-primary/10 fill-current"></i>
+                    <p class="text-gray-600 mb-8 font-medium italic leading-relaxed text-sm">"Upgraded our home panel for an EV charger. Upfront pricing and spotless cleanup. Highly recommend Maximum Electrical!"</p>
+                    <div class="flex items-center gap-5">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center font-black text-primary text-xs">JT</div>
+                        <p class="font-black text-[11px] uppercase tracking-widest text-secondary">James T. <span class="block text-[9px] text-gray-400 font-bold mt-1 uppercase tracking-normal">Bethesda, MD</span></p>
                     </div>
                 </div>
             </div>
