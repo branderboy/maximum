@@ -441,7 +441,7 @@
             <div class="text-center mb-20 text-black">
                 <div class="flex items-center justify-center gap-3 mb-5 text-primary">
                     <span class="w-12 h-[2px] bg-primary"></span>
-                    <span class="font-black uppercase tracking-[0.4em] text-[11px]">Where We Work</span>
+                    <span class="font-black uppercase tracking-[0.4em] text-[11px]">Service Area</span>
                     <span class="w-12 h-[2px] bg-primary"></span>
                 </div>
                 <h2 class="text-4xl md:text-6xl font-heading font-black uppercase tracking-tighter text-secondary">Counties We Serve</h2>
@@ -451,16 +451,21 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Prince George's -->
                 <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-primary hover:shadow-xl hover:shadow-primary/10 transition-all">
-                    <!-- Project visual header -->
-                    <div class="relative h-48 bg-gradient-to-br from-secondary via-secondary to-primary/40 overflow-hidden flex items-center justify-center">
-                        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 20px 20px;"></div>
-                        <i data-lucide="layout-grid" class="w-24 h-24 text-white/90 stroke-[1.25] relative z-10 group-hover:scale-110 transition-transform"></i>
+                    <!-- Map header -->
+                    <div class="relative h-48 overflow-hidden">
+                        <iframe src="https://maps.google.com/maps?q=Prince+George%27s+County,+MD&t=&z=10&ie=UTF8&iwloc=&output=embed" class="absolute inset-0 w-full h-full border-0 pointer-events-none" loading="lazy" title="Prince George's County, MD map"></iframe>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none"></div>
+                        <!-- Location pin -->
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full drop-shadow-lg">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary via-primary to-secondary border-2 border-white flex items-center justify-center shadow-lg shadow-primary/60 animate-bounce">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-white"></i>
+                            </div>
+                        </div>
                         <!-- Blue project tag -->
                         <span class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-[0.25em] px-3 py-1.5 rounded-full shadow-lg shadow-primary/50">Panel Upgrade</span>
                     </div>
                     <div class="p-8">
-                        <h3 class="text-2xl md:text-3xl font-heading font-black uppercase tracking-tight text-secondary mb-1">Prince George's</h3>
-                        <p class="text-[11px] font-black uppercase tracking-[0.25em] text-primary mb-5">Maryland County</p>
+                        <h3 class="text-2xl md:text-3xl font-heading font-black uppercase tracking-tight text-secondary mb-5">PG County</h3>
                         <ul class="space-y-2 mb-6">
                             <li class="flex items-center gap-2 text-sm text-gray-600"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Bowie</li>
                             <li class="flex items-center gap-2 text-sm text-gray-600"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Upper Marlboro</li>
@@ -477,16 +482,20 @@
 
                 <!-- Montgomery (featured) -->
                 <div class="group bg-secondary rounded-2xl border-4 border-primary/30 overflow-hidden shadow-2xl md:-translate-y-4">
-                    <!-- Project visual header -->
-                    <div class="relative h-48 bg-gradient-to-br from-primary/40 via-secondary to-secondary overflow-hidden flex items-center justify-center">
-                        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 20px 20px;"></div>
-                        <i data-lucide="battery-charging" class="w-24 h-24 text-white/90 stroke-[1.25] relative z-10 group-hover:scale-110 transition-transform"></i>
+                    <!-- Map header -->
+                    <div class="relative h-48 overflow-hidden">
+                        <iframe src="https://maps.google.com/maps?q=Montgomery+County,+MD&t=&z=10&ie=UTF8&iwloc=&output=embed" class="absolute inset-0 w-full h-full border-0 pointer-events-none" loading="lazy" title="Montgomery County, MD map"></iframe>
+                        <div class="absolute inset-0 bg-gradient-to-t from-secondary/60 to-transparent pointer-events-none"></div>
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full drop-shadow-lg">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary via-primary to-secondary border-2 border-white flex items-center justify-center shadow-lg shadow-primary/60 animate-bounce">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-white"></i>
+                            </div>
+                        </div>
                         <span class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-[0.25em] px-3 py-1.5 rounded-full shadow-lg shadow-primary/50">EV Charger</span>
                         <span class="absolute top-4 right-4 bg-brandOrange text-white text-[9px] font-black uppercase tracking-[0.25em] px-3 py-1.5 rounded-full">Primary Reach</span>
                     </div>
                     <div class="p-8">
-                        <h3 class="text-2xl md:text-3xl font-heading font-black uppercase tracking-tight text-white mb-1">Montgomery</h3>
-                        <p class="text-[11px] font-black uppercase tracking-[0.25em] text-primary mb-5">Maryland County</p>
+                        <h3 class="text-2xl md:text-3xl font-heading font-black uppercase tracking-tight text-white mb-5">Montgomery County</h3>
                         <ul class="space-y-2 mb-6">
                             <li class="flex items-center gap-2 text-sm text-white/80"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Bethesda</li>
                             <li class="flex items-center gap-2 text-sm text-white/80"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Rockville</li>
@@ -503,14 +512,18 @@
 
                 <!-- Charles County -->
                 <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-primary hover:shadow-xl hover:shadow-primary/10 transition-all">
-                    <div class="relative h-48 bg-gradient-to-br from-secondary via-secondary to-primary/40 overflow-hidden flex items-center justify-center">
-                        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 20px 20px;"></div>
-                        <i data-lucide="lightbulb" class="w-24 h-24 text-white/90 stroke-[1.25] relative z-10 group-hover:scale-110 transition-transform"></i>
+                    <div class="relative h-48 overflow-hidden">
+                        <iframe src="https://maps.google.com/maps?q=Charles+County,+MD&t=&z=10&ie=UTF8&iwloc=&output=embed" class="absolute inset-0 w-full h-full border-0 pointer-events-none" loading="lazy" title="Charles County, MD map"></iframe>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none"></div>
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full drop-shadow-lg">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary via-primary to-secondary border-2 border-white flex items-center justify-center shadow-lg shadow-primary/60 animate-bounce">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-white"></i>
+                            </div>
+                        </div>
                         <span class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase tracking-[0.25em] px-3 py-1.5 rounded-full shadow-lg shadow-primary/50">Lighting Install</span>
                     </div>
                     <div class="p-8">
-                        <h3 class="text-2xl md:text-3xl font-heading font-black uppercase tracking-tight text-secondary mb-1">Charles</h3>
-                        <p class="text-[11px] font-black uppercase tracking-[0.25em] text-primary mb-5">Maryland County</p>
+                        <h3 class="text-2xl md:text-3xl font-heading font-black uppercase tracking-tight text-secondary mb-5">Charles County</h3>
                         <ul class="space-y-2 mb-6">
                             <li class="flex items-center gap-2 text-sm text-gray-600"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Waldorf</li>
                             <li class="flex items-center gap-2 text-sm text-gray-600"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> La Plata</li>
