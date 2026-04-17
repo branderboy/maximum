@@ -273,45 +273,132 @@
     </section>
 
     <!-- HOW WE WORK (White Background, Black Arrows) -->
-    <section id="how-it-works" class="py-24 !bg-white relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16 text-black">
-                <p class="text-primary font-black uppercase tracking-[0.4em] text-[11px] mb-3 text-primary text-primary">Our Working Process</p>
-                <h2 class="text-4xl md:text-6xl font-heading font-black uppercase tracking-tighter text-secondary">How We Work</h2>
+    <section id="how-it-works" class="py-28 !bg-white relative overflow-hidden">
+        <!-- Decorative background glow -->
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-brandOrange/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative">
+            <!-- Header -->
+            <div class="text-center mb-20">
+                <div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-5">
+                    <span class="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></span>
+                    <p class="text-primary font-black uppercase tracking-[0.4em] text-[10px]">Our Working Process</p>
+                    <span class="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></span>
+                </div>
+                <h2 class="text-5xl md:text-7xl font-heading font-black uppercase tracking-tighter text-secondary">
+                    How <span class="relative inline-block">
+                        <span class="relative z-10">We Work</span>
+                        <span class="absolute bottom-2 left-0 right-0 h-3 bg-brandOrange/30 -z-0"></span>
+                    </span>
+                </h2>
+                <p class="text-gray-500 text-sm font-bold uppercase tracking-[0.3em] mt-4">Three Steps. Zero Guesswork.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-0 relative text-black">
+            <!-- Connecting dashed line (desktop) -->
+            <div class="hidden lg:block absolute left-0 right-0 top-[52%] mx-auto max-w-5xl h-px border-t-2 border-dashed border-primary/20 pointer-events-none"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-8 relative">
                 <!-- Step 1 -->
-                <div class="flex flex-col items-center text-center px-6 relative group">
-                    <h3 class="text-9xl md:text-[11rem] font-heading font-black text-secondary/5 mb-[-4rem] group-hover:text-primary/10 transition-colors select-none">01</h3>
-                    <h4 class="text-3xl font-heading font-black text-brandOrange uppercase mb-4 italic tracking-widest">Step One</h4>
-                    <p class="text-2xl font-heading font-bold text-black uppercase mb-6 tracking-tight">Request A Quote</p>
-                    <p class="text-sm text-gray-500 max-w-xs mx-auto font-medium leading-relaxed uppercase tracking-widest text-black">Submit your details. We'll reach out within 60 minutes for your local Maryland home.</p>
-                    
-                    <div class="hidden lg:flex absolute top-1/2 -right-8 -translate-y-1/2 z-30 animate-process-arrow text-black">
-                        <i data-lucide="arrow-right" class="w-16 h-16"></i>
+                <div class="relative group">
+                    <!-- Card -->
+                    <div class="relative bg-white rounded-2xl border-2 border-gray-100 p-10 pt-16 shadow-sm hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/30 transition-all duration-300 h-full overflow-hidden">
+                        <!-- Ghost number -->
+                        <h3 class="absolute -top-8 -right-4 text-[10rem] font-heading font-black leading-none text-primary/5 group-hover:text-primary/10 transition-colors select-none pointer-events-none">01</h3>
+                        <!-- Top gradient bar -->
+                        <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary to-brandOrange"></div>
+
+                        <!-- Step badge + icon -->
+                        <div class="flex items-center gap-3 mb-6 relative z-10">
+                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center shadow-lg shadow-primary/40 ring-4 ring-primary/10 group-hover:scale-110 group-hover:rotate-6 transition-transform">
+                                <i data-lucide="clipboard-list" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">Step 01</span>
+                                <span class="text-lg font-heading font-black text-brandOrange uppercase italic tracking-wider leading-none">Step One</span>
+                            </div>
+                        </div>
+
+                        <h4 class="text-3xl font-heading font-black text-secondary uppercase mb-4 tracking-tight relative z-10">Request A Quote</h4>
+                        <p class="text-sm text-gray-600 font-medium leading-relaxed relative z-10 mb-6">Submit your details. We'll reach out within 60 minutes for your local Maryland home.</p>
+
+                        <!-- Feature pill -->
+                        <div class="inline-flex items-center gap-2 bg-primary/5 border border-primary/20 rounded-full px-3 py-1.5 relative z-10">
+                            <i data-lucide="zap" class="w-3.5 h-3.5 text-primary"></i>
+                            <span class="text-[10px] font-black uppercase tracking-widest text-primary">60-Minute Response</span>
+                        </div>
+                    </div>
+
+                    <!-- Connector arrow (desktop) -->
+                    <div class="hidden lg:flex absolute top-1/2 -right-6 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white border-2 border-primary items-center justify-center shadow-lg animate-process-arrow">
+                        <i data-lucide="arrow-right" class="w-6 h-6 text-primary"></i>
                     </div>
                 </div>
 
                 <!-- Step 2 -->
-                <div class="flex flex-col items-center text-center px-6 relative group text-black">
-                    <h3 class="text-9xl md:text-[11rem] font-heading font-black text-secondary/5 mb-[-4rem] group-hover:text-primary/10 transition-colors select-none">02</h3>
-                    <h4 class="text-3xl font-heading font-black text-brandOrange uppercase mb-4 italic tracking-widest text-brandOrange">Step Two</h4>
-                    <p class="text-2xl font-heading font-bold text-black uppercase mb-6 tracking-tight text-secondary">Master Audit</p>
-                    <p class="text-sm text-gray-500 max-w-xs mx-auto font-medium leading-relaxed uppercase tracking-widest text-black">A Licensed Master Electrician finds the root cause and provide upfront, clear flat-rate options.</p>
-                    
-                    <div class="hidden lg:flex absolute top-1/2 -right-8 -translate-y-1/2 z-30 animate-process-arrow text-black">
-                        <i data-lucide="arrow-right" class="w-16 h-16"></i>
+                <div class="relative group">
+                    <div class="relative bg-white rounded-2xl border-2 border-gray-100 p-10 pt-16 shadow-sm hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/30 transition-all duration-300 h-full overflow-hidden">
+                        <h3 class="absolute -top-8 -right-4 text-[10rem] font-heading font-black leading-none text-primary/5 group-hover:text-primary/10 transition-colors select-none pointer-events-none">02</h3>
+                        <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brandOrange to-primary"></div>
+
+                        <div class="flex items-center gap-3 mb-6 relative z-10">
+                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-brandOrange to-brandOrange/70 flex items-center justify-center shadow-lg shadow-brandOrange/40 ring-4 ring-brandOrange/10 group-hover:scale-110 group-hover:rotate-6 transition-transform">
+                                <i data-lucide="search-check" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">Step 02</span>
+                                <span class="text-lg font-heading font-black text-brandOrange uppercase italic tracking-wider leading-none">Step Two</span>
+                            </div>
+                        </div>
+
+                        <h4 class="text-3xl font-heading font-black text-secondary uppercase mb-4 tracking-tight relative z-10">Master Audit</h4>
+                        <p class="text-sm text-gray-600 font-medium leading-relaxed relative z-10 mb-6">A Licensed Master Electrician finds the root cause and provides upfront, clear flat-rate options.</p>
+
+                        <div class="inline-flex items-center gap-2 bg-brandOrange/5 border border-brandOrange/20 rounded-full px-3 py-1.5 relative z-10">
+                            <i data-lucide="badge-check" class="w-3.5 h-3.5 text-brandOrange"></i>
+                            <span class="text-[10px] font-black uppercase tracking-widest text-brandOrange">Flat-Rate Pricing</span>
+                        </div>
+                    </div>
+
+                    <div class="hidden lg:flex absolute top-1/2 -right-6 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-white border-2 border-primary items-center justify-center shadow-lg animate-process-arrow">
+                        <i data-lucide="arrow-right" class="w-6 h-6 text-primary"></i>
                     </div>
                 </div>
 
                 <!-- Step 3 -->
-                <div class="flex flex-col items-center text-center px-6 group text-black">
-                    <h3 class="text-9xl md:text-[11rem] font-heading font-black text-secondary/5 mb-[-4rem] group-hover:text-primary/10 transition-colors select-none text-black">03</h3>
-                    <h4 class="text-3xl font-heading font-black text-brandOrange uppercase mb-4 italic tracking-widest text-brandOrange">Step Three</h4>
-                    <p class="text-2xl font-heading font-bold text-black uppercase mb-6 tracking-tight text-secondary">The Fix</p>
-                    <p class="text-sm text-gray-500 max-w-xs mx-auto font-medium leading-relaxed uppercase tracking-widest text-black">We complete the work safely with zero mess. Your sanctuary is restored and guaranteed.</p>
+                <div class="relative group">
+                    <div class="relative bg-white rounded-2xl border-2 border-gray-100 p-10 pt-16 shadow-sm hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary/30 transition-all duration-300 h-full overflow-hidden">
+                        <h3 class="absolute -top-8 -right-4 text-[10rem] font-heading font-black leading-none text-primary/5 group-hover:text-primary/10 transition-colors select-none pointer-events-none">03</h3>
+                        <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary via-brandOrange to-primary"></div>
+
+                        <div class="flex items-center gap-3 mb-6 relative z-10">
+                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-secondary to-secondary/80 flex items-center justify-center shadow-lg shadow-secondary/40 ring-4 ring-secondary/10 group-hover:scale-110 group-hover:rotate-6 transition-transform">
+                                <i data-lucide="shield-check" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-[9px] font-black uppercase tracking-[0.3em] text-gray-400">Step 03</span>
+                                <span class="text-lg font-heading font-black text-brandOrange uppercase italic tracking-wider leading-none">Step Three</span>
+                            </div>
+                        </div>
+
+                        <h4 class="text-3xl font-heading font-black text-secondary uppercase mb-4 tracking-tight relative z-10">The Fix</h4>
+                        <p class="text-sm text-gray-600 font-medium leading-relaxed relative z-10 mb-6">We complete the work safely with zero mess. Your sanctuary is restored and guaranteed.</p>
+
+                        <div class="inline-flex items-center gap-2 bg-secondary/5 border border-secondary/20 rounded-full px-3 py-1.5 relative z-10">
+                            <i data-lucide="shield" class="w-3.5 h-3.5 text-secondary"></i>
+                            <span class="text-[10px] font-black uppercase tracking-widest text-secondary">Work Guaranteed</span>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <!-- CTA strip -->
+            <div class="mt-16 flex flex-col md:flex-row items-center justify-center gap-4">
+                <p class="text-sm font-bold uppercase tracking-widest text-gray-500">Ready to get started?</p>
+                <button onclick="openFunnel()" class="group bg-brandOrange text-white px-8 py-3.5 rounded-md font-black uppercase tracking-widest text-[11px] hover:bg-secondary transition-all shadow-lg shadow-brandOrange/30 hover:shadow-secondary/30 inline-flex items-center gap-2">
+                    Start Step One
+                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </button>
             </div>
         </div>
     </section>
