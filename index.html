@@ -162,7 +162,7 @@
             <div class="lg:col-span-5 flex justify-center lg:justify-end">
                 <div class="w-full max-w-md bg-white p-8 md:p-10 rounded-2xl shadow-2xl relative overflow-hidden group border border-gray-100">
                     <div class="relative z-10 text-black">
-                        <h3 class="font-heading font-black text-4xl md:text-5xl uppercase mb-2 tracking-tight border-b-2 border-primary/10 pb-4 text-secondary">Request Estimate</h3>
+                        <h3 class="font-heading font-black text-4xl md:text-5xl uppercase mb-2 tracking-tight border-b-2 border-primary/10 pb-4 text-secondary">Book a Consultation</h3>
                         <p class="text-sm text-gray-600 font-bold mb-6">Response within 60 minutes</p>
 
                         <form class="space-y-4">
@@ -561,21 +561,58 @@
                 </div>
                 <p class="text-[12px] font-black text-gray-400 uppercase tracking-widest italic">5.0 Star Maryland Excellence</p>
             </div>
-            <div class="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div class="bg-light p-10 rounded-3xl border border-gray-100 relative group hover:border-primary transition-all duration-500 shadow-sm">
-                    <i data-lucide="quote" class="absolute top-10 right-10 w-12 h-12 text-primary/10 fill-current"></i>
-                    <p class="text-gray-600 mb-8 font-medium italic leading-relaxed text-sm">"They found a hidden wiring issue that two others missed. Very clean work and friendly. Explained everything perfectly."</p>
-                    <div class="flex items-center gap-5">
-                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center font-black text-primary text-xs">SM</div>
-                        <p class="font-black text-[11px] uppercase tracking-widest text-secondary">Sarah M. <span class="block text-[9px] text-gray-400 font-bold mt-1 uppercase tracking-normal">Bowie, MD</span></p>
+            <div class="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Sarah M. -->
+                <div class="relative bg-white p-10 pt-16 rounded-2xl shadow-xl shadow-primary/10 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2 transition-all duration-500 border-t-4 border-primary overflow-hidden">
+                    <!-- Giant quote glyph -->
+                    <div class="absolute -top-4 left-8 font-heading font-black text-[9rem] leading-none bg-gradient-to-br from-primary via-primary to-secondary bg-clip-text text-transparent select-none pointer-events-none">&ldquo;</div>
+                    <!-- Corner shine -->
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-1 mb-5">
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        </div>
+                        <p class="text-secondary text-lg font-medium leading-relaxed mb-8">&ldquo;They found a hidden wiring issue that two others missed. Very clean work and friendly. Explained everything perfectly.&rdquo;</p>
+                        <div class="flex items-center gap-4 pt-6 border-t border-gray-100">
+                            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary via-primary to-secondary border-2 border-secondary flex items-center justify-center font-heading font-black text-white text-base shadow-md shadow-primary/30">SM</div>
+                            <div>
+                                <p class="font-heading font-black text-base text-secondary">Sarah M.</p>
+                                <p class="text-xs text-gray-500 font-medium flex items-center gap-1.5 mt-0.5">
+                                    <i data-lucide="map-pin" class="w-3 h-3 text-primary"></i> Bowie, MD
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-light p-10 rounded-3xl border border-gray-100 relative group hover:border-primary transition-all duration-500 shadow-sm">
-                    <i data-lucide="quote" class="absolute top-10 right-10 w-12 h-12 text-primary/10 fill-current"></i>
-                    <p class="text-gray-600 mb-8 font-medium italic leading-relaxed text-sm">"Upgraded our home panel for an EV charger. Upfront pricing and spotless cleanup. Highly recommend Maximum Electrical!"</p>
-                    <div class="flex items-center gap-5">
-                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center font-black text-primary text-xs">JT</div>
-                        <p class="font-black text-[11px] uppercase tracking-widest text-secondary">James T. <span class="block text-[9px] text-gray-400 font-bold mt-1 uppercase tracking-normal">Bethesda, MD</span></p>
+
+                <!-- James T. -->
+                <div class="relative bg-white p-10 pt-16 rounded-2xl shadow-xl shadow-primary/10 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2 transition-all duration-500 border-t-4 border-primary overflow-hidden">
+                    <div class="absolute -top-4 left-8 font-heading font-black text-[9rem] leading-none bg-gradient-to-br from-primary via-primary to-secondary bg-clip-text text-transparent select-none pointer-events-none">&ldquo;</div>
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-1 mb-5">
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                            <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        </div>
+                        <p class="text-secondary text-lg font-medium leading-relaxed mb-8">&ldquo;Upgraded our home panel for an EV charger. Upfront pricing and spotless cleanup. Highly recommend Maximum Electrical!&rdquo;</p>
+                        <div class="flex items-center gap-4 pt-6 border-t border-gray-100">
+                            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-primary via-primary to-secondary border-2 border-secondary flex items-center justify-center font-heading font-black text-white text-base shadow-md shadow-primary/30">JT</div>
+                            <div>
+                                <p class="font-heading font-black text-base text-secondary">James T.</p>
+                                <p class="text-xs text-gray-500 font-medium flex items-center gap-1.5 mt-0.5">
+                                    <i data-lucide="map-pin" class="w-3 h-3 text-primary"></i> Bethesda, MD
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
