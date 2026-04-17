@@ -273,11 +273,15 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-8 relative">
                     <!-- Step 1 -->
-                    <div class="flex flex-col items-center text-center px-4">
+                    <div class="flex flex-col items-center text-center px-4 relative">
                         <div class="relative mb-8">
                             <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary via-primary to-secondary border-4 border-secondary flex items-center justify-center shadow-lg shadow-primary/40 relative z-10">
                                 <span class="text-white font-heading font-black text-2xl tracking-tight">01</span>
                             </div>
+                        </div>
+                        <!-- Arrow to Step 2 -->
+                        <div class="hidden md:flex absolute top-6 -right-6 z-20 animate-process-arrow text-primary">
+                            <i data-lucide="arrow-right" class="w-10 h-10 stroke-[2.5]"></i>
                         </div>
                         <h4 class="text-xs font-black text-brandOrange uppercase mb-3 tracking-[0.3em]">Step One</h4>
                         <h3 class="text-2xl md:text-3xl font-heading font-black text-secondary uppercase mb-4 tracking-tight">Request A Quote</h3>
@@ -285,11 +289,15 @@
                     </div>
 
                     <!-- Step 2 -->
-                    <div class="flex flex-col items-center text-center px-4">
+                    <div class="flex flex-col items-center text-center px-4 relative">
                         <div class="relative mb-8">
                             <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary via-primary to-secondary border-4 border-secondary flex items-center justify-center shadow-lg shadow-primary/40 relative z-10">
                                 <span class="text-white font-heading font-black text-2xl tracking-tight">02</span>
                             </div>
+                        </div>
+                        <!-- Arrow to Step 3 -->
+                        <div class="hidden md:flex absolute top-6 -right-6 z-20 animate-process-arrow text-primary">
+                            <i data-lucide="arrow-right" class="w-10 h-10 stroke-[2.5]"></i>
                         </div>
                         <h4 class="text-xs font-black text-brandOrange uppercase mb-3 tracking-[0.3em]">Step Two</h4>
                         <h3 class="text-2xl md:text-3xl font-heading font-black text-secondary uppercase mb-4 tracking-tight">Master Audit</h3>
