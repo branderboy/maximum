@@ -67,6 +67,20 @@
         .angi-shadow {
             box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.15);
         }
+
+        /* Prevent sticky :hover/:focus/:visited color on touch devices */
+        @media (hover: none) {
+            #navbar a:hover,
+            #navbar a:focus,
+            #navbar a:visited,
+            #mobile-menu a:hover,
+            #mobile-menu a:focus,
+            #mobile-menu a:visited,
+            #navbar a:hover p,
+            #mobile-menu a:hover span {
+                color: inherit !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-white selection:bg-primary selection:text-white overflow-x-hidden text-black">
@@ -98,8 +112,8 @@
     </div>
 
     <!-- NAVBAR -->
-    <nav id="navbar" class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 transition-all duration-300 py-4">
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center text-secondary">
+    <nav id="navbar" class="sticky top-0 w-full z-50 bg-gradient-to-b from-[#14305F] via-[#0A1D3C] to-[#050B18] md:bg-none md:bg-white/95 backdrop-blur-md md:border-b md:border-gray-100 transition-all duration-300 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center text-white md:text-secondary">
             <div class="flex items-center gap-3">
                 <img src="images/logo.png" alt="Maximum Electrical Consulting Logo" class="h-24 md:h-28 w-auto object-contain">
             </div>
@@ -114,25 +128,25 @@
 
             <div class="flex items-center gap-6">
                 <a href="tel:3012460053" class="hidden sm:flex flex-col items-end group">
-                    <p class="text-xs text-gray-500 font-bold uppercase tracking-widest group-hover:text-primary">Emergency Help</p>
-                    <p class="font-heading font-black text-2xl text-secondary group-hover:text-primary transition-colors">(301) 246-0053</p>
+                    <p class="text-xs text-white/80 md:text-gray-500 font-bold uppercase tracking-widest group-hover:text-primary">Emergency Help</p>
+                    <p class="font-heading font-black text-2xl text-white md:text-black group-hover:text-primary transition-colors">(301) 246-0053</p>
                 </a>
-                <button id="mobile-menu-btn" class="lg:hidden p-2 text-secondary">
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-white md:text-secondary">
                     <i data-lucide="menu" class="w-8 h-8"></i>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100">
+        <div id="mobile-menu" class="hidden lg:hidden bg-[#081A33] md:bg-white md:border-t md:border-gray-100">
             <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-5 text-sm font-black uppercase tracking-[0.15em]">
-                <a href="#home" class="text-secondary hover:text-primary transition-colors">Home</a>
-                <a href="#service-area" class="text-secondary hover:text-primary transition-colors">Service Area</a>
-                <a href="#how-it-works" class="text-secondary hover:text-primary transition-colors">How We Work</a>
-                <a href="#about" class="text-secondary hover:text-primary transition-colors">About</a>
-                <a href="#contact" class="text-secondary hover:text-primary transition-colors">Contact</a>
-                <a href="tel:3012460053" class="sm:hidden flex items-center gap-3 pt-4 mt-2 border-t border-gray-200 text-secondary">
-                    <i data-lucide="phone" class="w-5 h-5 text-primary"></i>
+                <a href="#home" class="nav-link text-white md:text-secondary hover:text-primary transition-colors">Home</a>
+                <a href="#service-area" class="nav-link text-white md:text-secondary hover:text-primary transition-colors">Service Area</a>
+                <a href="#how-it-works" class="nav-link text-white md:text-secondary hover:text-primary transition-colors">How We Work</a>
+                <a href="#about" class="nav-link text-white md:text-secondary hover:text-primary transition-colors">About</a>
+                <a href="#contact" class="nav-link text-white md:text-secondary hover:text-primary transition-colors">Contact</a>
+                <a href="tel:3012460053" class="sm:hidden flex items-center gap-3 pt-4 mt-2 border-t border-white/20 md:border-gray-200 text-white md:text-secondary">
+                    <i data-lucide="phone" class="w-5 h-5 text-white md:text-primary"></i>
                     <span class="font-heading font-black text-xl normal-case tracking-normal">(301) 246-0053</span>
                 </a>
             </div>
