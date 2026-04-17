@@ -443,46 +443,68 @@
                 <p class="text-gray-500 font-bold uppercase text-[12px] tracking-widest mt-4">Master-Level Care for Southern Maryland</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="area-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl group border border-transparent text-black">
-                    <div class="h-64 relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="Prince George's County Homes">
-                        <div class="absolute top-6 left-6 bg-primary text-white px-4 py-2 rounded font-black text-[10px] uppercase tracking-widest shadow-lg">Maryland</div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Prince George's -->
+                <div class="group bg-white rounded-2xl border border-gray-200 p-10 hover:border-primary hover:shadow-xl hover:shadow-primary/10 transition-all">
+                    <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-primary via-primary to-secondary border-2 border-secondary flex items-center justify-center shadow-md shadow-primary/30 mb-6">
+                        <i data-lucide="map-pin" class="w-7 h-7 text-white stroke-[2]"></i>
                     </div>
-                    <div class="p-10 text-center md:text-left text-black text-black">
-                        <h3 class="text-2xl font-heading font-black mb-4 uppercase tracking-tighter group-hover:text-primary transition-colors text-secondary">Prince George's</h3>
-                        <p class="text-xs text-gray-500 mb-8 leading-relaxed font-bold uppercase tracking-widest italic text-gray-500">Neighborly Service for PG County.</p>
-                        <button onclick="openFunnel()" class="bg-secondary text-white px-8 py-4 rounded font-black text-[10px] uppercase tracking-widest hover:bg-primary transition-all w-full flex justify-center items-center gap-3 text-white">
-                            Request Service <i data-lucide="map-pin" class="w-4 h-4 text-primary"></i>
-                        </button>
+                    <h3 class="text-2xl md:text-3xl font-heading font-black uppercase tracking-tight text-secondary mb-2">Prince George's</h3>
+                    <p class="text-[11px] font-black uppercase tracking-[0.25em] text-primary mb-6">Maryland County</p>
+                    <ul class="space-y-2 mb-8">
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Bowie</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Upper Marlboro</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Laurel &amp; Greenbelt</li>
+                    </ul>
+                    <div class="flex items-center gap-2 mb-6 text-xs font-black uppercase tracking-widest text-secondary">
+                        <i data-lucide="clock" class="w-4 h-4 text-primary"></i> 60-Minute Response
                     </div>
+                    <button onclick="openFunnel()" class="bg-secondary text-white px-6 py-3 rounded font-black text-[10px] uppercase tracking-widest hover:bg-primary transition-all w-full">
+                        Book in PG County
+                    </button>
                 </div>
-                <div class="area-card bg-secondary rounded-3xl overflow-hidden shadow-2xl text-white md:-translate-y-10 border-4 border-primary/20">
-                    <div class="h-64 relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover opacity-90" alt="Montgomery County Homes">
-                        <div class="absolute inset-0 bg-gradient-to-t from-secondary via-transparent to-transparent opacity-80"></div>
-                        <div class="absolute top-6 left-6 bg-primary text-white px-4 py-2 rounded font-black text-[10px] uppercase tracking-widest shadow-lg">Primary Reach</div>
+
+                <!-- Montgomery (featured) -->
+                <div class="group bg-secondary rounded-2xl border-4 border-primary/30 p-10 shadow-2xl md:-translate-y-4">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-primary via-primary to-secondary border-2 border-white/20 flex items-center justify-center shadow-md shadow-primary/30">
+                            <i data-lucide="map-pin" class="w-7 h-7 text-white stroke-[2]"></i>
+                        </div>
+                        <span class="text-[9px] font-black uppercase tracking-[0.25em] text-white bg-brandOrange px-3 py-1.5 rounded-full">Primary Reach</span>
                     </div>
-                    <div class="p-10 text-center text-white">
-                        <h3 class="text-2xl font-heading font-black mb-4 uppercase tracking-tighter">Montgomery</h3>
-                        <p class="text-white/80 text-xs mb-8 leading-relaxed font-black uppercase tracking-widest italic">Serving Bethesda, Rockville & Beyond.</p>
-                        <button onclick="openFunnel()" class="bg-white text-secondary px-8 py-4 rounded font-black text-[10px] uppercase tracking-widest hover:bg-primary hover:text-white transition-all w-full shadow-lg">
-                            Schedule in Montgomery
-                        </button>
+                    <h3 class="text-2xl md:text-3xl font-heading font-black uppercase tracking-tight text-white mb-2">Montgomery</h3>
+                    <p class="text-[11px] font-black uppercase tracking-[0.25em] text-primary mb-6">Maryland County</p>
+                    <ul class="space-y-2 mb-8">
+                        <li class="flex items-center gap-2 text-sm text-white/80"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Bethesda</li>
+                        <li class="flex items-center gap-2 text-sm text-white/80"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Rockville</li>
+                        <li class="flex items-center gap-2 text-sm text-white/80"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Silver Spring &amp; Gaithersburg</li>
+                    </ul>
+                    <div class="flex items-center gap-2 mb-6 text-xs font-black uppercase tracking-widest text-white">
+                        <i data-lucide="clock" class="w-4 h-4 text-primary"></i> 60-Minute Response
                     </div>
+                    <button onclick="openFunnel()" class="bg-white text-secondary px-6 py-3 rounded font-black text-[10px] uppercase tracking-widest hover:bg-primary hover:text-white transition-all w-full">
+                        Book in Montgomery
+                    </button>
                 </div>
-                <div class="area-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl group border border-transparent text-black text-black">
-                    <div class="h-64 relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt="Charles County Homes">
-                        <div class="absolute top-6 left-6 bg-primary text-white px-4 py-2 rounded font-black text-[10px] uppercase tracking-widest shadow-lg">Maryland</div>
+
+                <!-- Charles County -->
+                <div class="group bg-white rounded-2xl border border-gray-200 p-10 hover:border-primary hover:shadow-xl hover:shadow-primary/10 transition-all">
+                    <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-primary via-primary to-secondary border-2 border-secondary flex items-center justify-center shadow-md shadow-primary/30 mb-6">
+                        <i data-lucide="map-pin" class="w-7 h-7 text-white stroke-[2]"></i>
                     </div>
-                    <div class="p-10 text-center md:text-left text-black text-black">
-                        <h3 class="text-2xl font-heading font-black mb-4 uppercase tracking-tighter group-hover:text-primary transition-colors text-secondary text-black">Charles County</h3>
-                        <p class="text-xs text-gray-500 mb-8 leading-relaxed font-bold uppercase tracking-widest italic text-gray-500">Rapid Support for Southern Maryland.</p>
-                        <button onclick="openFunnel()" class="bg-secondary text-white px-8 py-4 rounded font-black text-[10px] uppercase tracking-widest hover:bg-primary transition-all w-full flex justify-center items-center gap-3 text-white">
-                            Request Service <i data-lucide="map-pin" class="w-4 h-4 text-primary text-white"></i>
-                        </button>
+                    <h3 class="text-2xl md:text-3xl font-heading font-black uppercase tracking-tight text-secondary mb-2">Charles</h3>
+                    <p class="text-[11px] font-black uppercase tracking-[0.25em] text-primary mb-6">Maryland County</p>
+                    <ul class="space-y-2 mb-8">
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Waldorf</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> La Plata</li>
+                        <li class="flex items-center gap-2 text-sm text-gray-600"><i data-lucide="zap" class="w-3.5 h-3.5 text-primary fill-primary"></i> Indian Head &amp; Bryans Road</li>
+                    </ul>
+                    <div class="flex items-center gap-2 mb-6 text-xs font-black uppercase tracking-widest text-secondary">
+                        <i data-lucide="clock" class="w-4 h-4 text-primary"></i> 60-Minute Response
                     </div>
+                    <button onclick="openFunnel()" class="bg-secondary text-white px-6 py-3 rounded font-black text-[10px] uppercase tracking-widest hover:bg-primary transition-all w-full">
+                        Book in Charles
+                    </button>
                 </div>
             </div>
         </div>
